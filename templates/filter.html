@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>filter</title>
 </head>
 <body>
+    <div>
 
+        {{ name|default:"laowang" }} <br>
+        {{ test_a2A|lower|capfirst }} <br>
+        {{ num1|add:num2 }} <br>
+        {{ lis|first }} || {{ lis|last }} <br>
+        {{ now|date }} <br>
+        {{ now|time }} <br>
+        {{ now|date:"Y/m/d" }} <br>
+        {{ now|date:"H:i:s" }} <br>
+        {{ lis|length }} <br>
+
+    </div>
 </body>
 </html>
