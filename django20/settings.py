@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tutorials',
     'day01.apps.Day01Config',
-    'day04',
+    'day04.apps.Day04Config',
+    'day05.apps.Day05Config',
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,20 @@
+{% load filters %}
+{% load labels %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>filters</title>
+</head>
+<body>
+    <div>
+        {{ "hello"|myupper}}<br>
+        {{ "HELLO"|mylower}}<br>
+
+        <p>自定义标签</p>
+        <li>name: {% show_name "james" %}</li>
+        <li>time: {% current_time "%Y-%m-%d %H:%M:%S" %}</li>
+        <li>time1: {% current_time_1 %}</li>
+    </div>
+</body>
+</html>

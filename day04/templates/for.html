@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>for 语法</title>
 </head>
 <body>
+
+    <div>
+        {% for foo in for_list %}
+            {% if forloop.counter == 1 %}
+                <li>
+                    这是第一个元素{{ foo }}
+                </li><br>
+            {% endif %}
+                {{ foo }}
+            {% empty %}
+                <li>这里是默认数据</li>
+        {% endfor %}
+    </div>
 
 </body>
 </html>

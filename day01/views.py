@@ -21,9 +21,9 @@ def view_func(request):
     url = reverse("v1")
     return redirect(url)
 
-def view_func_v1(request):
+def view_func_v1(request,version):
 
-    return HttpResponse(content="Hello World")
+    return HttpResponse(content="Hello World{}".format(version))
 
 def view_re_func(request):
     return HttpResponse(content="re world")

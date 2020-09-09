@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block title %}
+    music 主页
+{% endblock %}
+
+{% block content %}
+    <div style="background: black; color: azure; width: 100px;height: 100px">
+
+            音乐的内容
+
+    </div>
+    {% block demo %}
+        这里是从其他页面导入进来的内容：<br><br>
+        {% include "list.html" %}
+    {% endblock %}
+{% endblock %}

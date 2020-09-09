@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{% block title %}
+        首页
+    {% endblock %}</title>
 </head>
 <body>
+
+{% block content %}
+
+    <div style="background: black; color: azure; width: 100px;height: 100px">
+        <br>
+        <li>默认的内容</li>
+    </div>
+{% endblock %}
 
 </body>
 </html>

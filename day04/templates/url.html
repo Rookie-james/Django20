@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>url 标签</title>
 </head>
 <body>
+    <div>
+        {% autoescape on %}
+            &nbsp;
+        {% endautoescape %}
 
+        <a href="{% url "v1" version %}">link--{{ version }}</a>
+{#        {% with version as vs %}#}
+{#            #}
+{#        {% endwith %}#}
+
+    </div>
 </body>
 </html>

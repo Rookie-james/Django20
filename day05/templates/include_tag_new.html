@@ -1,0 +1,27 @@
+{% load labels %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>include_new</title>
+
+    <style>
+        .news_demo{
+            width: 100px;
+            height: 50px;
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <li>demo</li>
+{#        {% for ne in new %}#}
+{#            {% stage_new ne %}#}
+{##}
+{#        {% endfor %}#}
+            {% stage_new new %}
+    </div>
+</body>
+</html>

@@ -6,7 +6,7 @@ from day01.views import view_func_v1,view_template,\
 
 urlpatterns = [
     path("view/name/", view_func, name='v0'),
-    path("view/v1/", view_func_v1, name='v1'),
+    path("view/<str:version>/", view_func_v1, name='v1'),
     re_path("^9\d{4}/$",view_re_func),
     path("temp/",view_template),
     path("temp_v1/",view_template_2),

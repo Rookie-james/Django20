@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>if 语法</title>
 </head>
 <body>
-
+    <div>
+        {% if name == "python" %}
+            这里是{{ name }}页面
+        {% elif name == "django" %}
+            这里是{{ name }}页面
+        {% else %}
+            这里是{{ name }}页面
+        {% endif %}
+    </div>
 </body>
 </html>

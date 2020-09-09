@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>include</title>
 </head>
 <body>
+    <div>
+        include 页面
+        <br>
 
+        <iframe src="{% url 'v1' 'v1' %}">
+
+        </iframe>
+            {% include "list.html"%}
+    </div>
 </body>
 </html>
